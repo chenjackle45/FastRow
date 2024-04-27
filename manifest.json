@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "FastRow 網頁速讀訓練",
+  "description": "這是一個網頁速讀訓練工具，可以幫助你提高網頁速讀能力。",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

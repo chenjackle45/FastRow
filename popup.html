@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FastRow 速讀練習</title>
+    <style>
+      body {
+        width: 300px; /* 設置寬度 */
+        height: 400px; /* 設置高度 */
+        background-color: #333; /* 設置背景色為深灰色 */
+        color: #fff; /* 設置文字顏色為白色 */
+        font-size: 16px; /* 設置字體大小 */
+      }
+
+      input[type="range"] {
+        border-radius: 10px;
+        width: 100%; /* 設置寬度 */
+        margin: 10px 0; /* 設置邊距 */
+        background: #555; /* 設置背景色 */
+        outline: none; /* 移除輸入框的輪廓 */
+        -webkit-appearance: none; /* 移除預設的外觀 */
+      }
+
+      button {
+        padding: 10px 20px; /* 設置內邊距 */
+        border: none; /* 移除邊框 */
+        background-color: #555; /* 設置背景色 */
+        color: #fff; /* 設置文字顏色 */
+        border-radius: 5px; /* 設置邊框半徑 */
+        cursor: pointer; /* 設置鼠標樣式 */
+        margin-top: 20px;
+      }
+
+      button:hover {
+        background-color: #777; /* 當鼠標懸停時改變背景色 */
+      }
+      .optimized-site {
+        margin-top: 20px;
+        color: #fff; /* 設置文字顏色為白色 */
+        font-size: 16px; /* 設置字體大小 */
+      }
+
+      h1 {
+        font-size: 2.5em; /* 設置主標的字體大小 */
+        margin-bottom: 0.5em; /* 設置主標下方的邊距 */
+      }
+
+      .subtitle {
+        font-size: 1.2em; /* 設置副標的字體大小 */
+        color: #777; /* 設置副標的文字顏色為淺灰色 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>FastRow</h1>
+    <div class="subtitle">閱讀速度就像肌肉一樣，可以越練越快</div>
+
+    <input
+      type="range"
+      id="speed"
+      min="100"
+      max="2000"
+      value="300"
+      step="100" />
+    <br />
+    <label for="speed">每分鐘閱讀</label>
+    <br />
+
+    <button id="toggle">開始速讀</button>
+
+    <div id="optimized-site" class="optimized-site"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
